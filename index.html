@@ -426,6 +426,25 @@ section:hover{
     }
 
 }
+
+.poster-grid{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+    margin-top: 20px;
+}
+
+.poster-grid img{
+    width: 100%;
+    border-radius: 12px;
+    transition: 0.3s;
+    box-shadow: 0 0 15px rgba(0,255,255,0.1);
+}
+
+.poster-grid img:hover{
+    transform: scale(1.05);
+    box-shadow: 0 0 25px rgba(0,255,255,0.3);
+}
 </style>
 </head>
 
@@ -447,7 +466,7 @@ section:hover{
     <div class="hero">
         <img src="Esports-poster/SHENARTS.png" class="hero-pic">
 
-        <h1>SHENARTS PORTFOLIO</h1>
+        <h1>MISA, ARVIC SHEENE</h1>
         <p>Graphic Designer | Video Editor | Layout Artist</p>
 
         <a href="#portfolio" class="btn">View My Work</a>
@@ -549,17 +568,15 @@ section:hover{
     </div>
 
 </section>	
-<section id="esports" class="hidden">
+<section id="esports" class="hidden page-section">
 
     <h1>POSTERS</h1>
 
-    <div class="slider">
-        <div class="slider-track">
+    <div class="poster-grid">
 
-            <img src="Esports-poster/EVSU-CC-EAGLES.png">
-            <img src="Esports-poster/THE-LOST-SOUL.png">
+        <img src="Esports-poster/EVSU-CC-EAGLES.png">
+        <img src="Esports-poster/THE-LOST-SOUL.png">
 
-        </div>
     </div>
 
 </section>
