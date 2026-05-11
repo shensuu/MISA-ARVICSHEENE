@@ -63,12 +63,14 @@ nav a:hover::after {
 }
 
 .hero{
-    padding:30px;
-    background: rgba(255,255,255,0.05);
-    border:1px solid rgba(255,255,255,0.1);
-    border-radius:20px;
-    backdrop-filter: blur(10px);
-    box-shadow:0 0 30px rgba(0,255,255,0.1);
+    padding: 40px;
+    background: linear-gradient(145deg, rgba(255,255,255,0.07), rgba(255,255,255,0.02));
+    border: 1px solid rgba(0,255,255,0.2);
+    border-radius: 25px;
+    backdrop-filter: blur(20px);
+    box-shadow: 0 0 40px rgba(0,255,255,0.15);
+    position: relative;
+    overflow: hidden;
 }
 
 .hero-pic{
@@ -445,11 +447,65 @@ section:hover{
     transform: scale(1.05);
     box-shadow: 0 0 25px rgba(0,255,255,0.3);
 }
+.edu-box{
+    background: rgba(255,255,255,0.05);
+    border: 1px solid rgba(255,255,255,0.1);
+    padding: 20px;
+    border-radius: 15px;
+    margin-top: 15px;
+    backdrop-filter: blur(10px);
+    box-shadow: 0 0 20px rgba(0,255,255,0.1);
+    transition: 0.3s;
+}
+
+.edu-box:hover{
+    transform: translateY(-5px);
+    box-shadow: 0 0 30px rgba(0,255,255,0.25);
+}
+
+.edu-box span{
+    color: #00ffff;
+    font-weight: bold;
+    font-size: 1.5rem;
+    letter-spacing: 1px;
+}
+
+.edu-box h3{
+    margin: 5px 0 10px;
+}
+
+.edu-box p{
+    margin: 5px 0;
+    color: #ddd;
+}
+.glow-circle{
+    position: fixed;
+    width: 300px;
+    height: 300px;
+    border-radius: 50%;
+    filter: blur(80px);
+    opacity: 0.4;
+    z-index: -1;
+}
+
+.one{
+    background: #00ffff;
+    top: 10%;
+    left: 10%;
+}
+
+.two{
+    background: #ff00ff;
+    bottom: 10%;
+    right: 10%;
+}
 </style>
 </head>
 
 <body>
 
+<div class="stars"></div>
+<div class="twinkling"></div>
 <div class="stars"></div>
 <div class="twinkling"></div>
 
@@ -480,9 +536,11 @@ section:hover{
 
         <p><b>Name:</b> Arvic Sheene Misa</p>
         <p><b>Age:</b> 20 Years Old</p>
+		<p><b>Place:</b> Brgy. West Visoria, Carigara,Leyte</p>
         <p><b>Birthday:</b> August 19, 2005</p>
-        <p><b>Role:</b> Graphic Designer / Video Editor</p>
-        <p><b>Tools:</b> Photoshop, Illustrator, Canva, CapCut, Adobe Premiere</p>
+        <p><b>Profession:</b> Graphic Designer / Video Editor</p>
+        <p><b>Email:</b> arvicsheenemisa2@gmail.com</p>
+		<p><b>Hobbies:</b> Gaming , Editing , Filmmaking , Creating Jersey Designs.</p>
 
         <hr>
 
@@ -496,13 +554,32 @@ section:hover{
 <section id="education" class="hidden page-section">
     <h2>Educational Background</h2>
 
-    <div class="edu-card">
-
-        <p><b>Elementary:</b> Cassidy Elementary School</p>
-        <p><b>High School:</b> Carigara National High School</p>
-        <p><b>College:</b> Bachelor of Science in Information Technology</p>
-
-    </div>
+    <div class="edu-box">
+        <span>Elementary</span>
+        <h3>Cassidy Elementary School</h3>
+        <p><b>Location:</b> Brgy. Ponong, Carigara, Leyte</p>
+        <p><b>School Year:</b> 2012 - 2018</p>
+		</div>
+	<div class="edu-box">
+        <span>Junior High School</span>
+        <h3>Carigara National High School</h3>
+		<p><b>Location:</b> Brgy. Ponong, Carigara, Leyte</p>
+        <p><b>School Year:</b> 2018 - 2022</p>
+	</div>
+	<div class="edu-box">
+        <span>Senior High School</span>
+        <h3>Carigara National High School</h3>
+		<p><b>Location:</b> Brgy. Ponong, Carigara, Leyte</p>
+        <p><b>Strand:</b> General Academic Strand</p>
+        <p><b>School Year:</b> 2022 - 2024</p>
+	</div>
+	<div class="edu-box">
+        <span>College</span>
+        <h3>Eastern Visayas State University - Carigara Campus</h3>
+        <p><b>Location:</b> Brgy. Barugohay Norte, Carigara, Leyte</p>
+		<p><b>Course:</b> Bachelor of Science in Information Technology</p>
+        <p><b>School Year:</b> 2024 - Present</p>
+		</div>	
 </section>
 
 <section id="skills" class="hidden page-section">
